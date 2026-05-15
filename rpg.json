@@ -1,0 +1,1409 @@
+{
+  "players": {
+    "6281249703469@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 70,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 27,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 9999999,
+      "inventory": {
+        "potion": 5
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "lastPvp": 1761566570308,
+      "pvpLosses": null
+    },
+    "6283847258685@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 10,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 60,
+      "maxMp": 100,
+      "mp": 100,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 5,
+      "inventory": {
+        "potion": 4,
+        "zirah_kulit": 1,
+        "elixir": 1,
+        "pedang_besi": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 1,
+      "monstersDefeated": 1,
+      "lastBattle": 1756816210841
+    },
+    "6282174667356@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 59,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 71,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 165,
+      "inventory": {
+        "potion": 3
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0
+    },
+    "6285211958917@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 7,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 92,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 65,
+      "inventory": {
+        "potion": 3
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0
+    },
+    "6289630341411@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 8,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 98,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 65,
+      "inventory": {
+        "potion": 3
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0
+    },
+    "6283169652560@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 100,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0
+    },
+    "6282118412445@s.whatsapp.net": {
+      "class": "archer",
+      "level": 3,
+      "exp": 150,
+      "expToNextLevel": 225,
+      "maxHp": 100,
+      "hp": 59,
+      "maxMp": 60,
+      "mp": 60,
+      "attack": 16,
+      "defense": 9,
+      "agility": 17,
+      "gold": 175,
+      "inventory": {
+        "potion": 5,
+        "zirah_kulit": 2,
+        "elixir": 2
+      },
+      "equipment": {
+        "weapon": "pedang_besi",
+        "armor": "zirah_kulit"
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 10,
+      "monstersDefeated": 37,
+      "lastBattle": 1765416901955
+    },
+    "6287736519839@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 10,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 59,
+      "maxMp": 100,
+      "mp": 60,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 55,
+      "inventory": {
+        "potion": 3
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "quests": {
+        "active": [],
+        "completed": []
+      },
+      "battles": 1,
+      "monstersDefeated": 1,
+      "lastBattle": 1757859901752
+    },
+    "6288705386169@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 3,
+      "exp": 94,
+      "expToNextLevel": 225,
+      "maxHp": 120,
+      "hp": 92,
+      "maxMp": 40,
+      "mp": 40,
+      "attack": 19,
+      "defense": 12,
+      "agility": 7,
+      "gold": 2402,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 1758412516539,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285396339240@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 2,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 97,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 51,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6287774943264@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 2,
+      "exp": 128,
+      "expToNextLevel": 150,
+      "maxHp": 110,
+      "hp": 5,
+      "maxMp": 35,
+      "mp": 35,
+      "attack": 17,
+      "defense": 11,
+      "agility": 6,
+      "gold": 1900,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6288246387665@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 5,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 92,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 80,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285166370226@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 60,
+      "maxMp": 100,
+      "mp": 100,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285824663720@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 2,
+      "exp": 0,
+      "expToNextLevel": 150,
+      "maxHp": 110,
+      "hp": 110,
+      "maxMp": 35,
+      "mp": 35,
+      "attack": 17,
+      "defense": 11,
+      "agility": 6,
+      "gold": 950,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6283851723125@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 10,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 75,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 60,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285180998627@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 2,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 95,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 55,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6283136929107@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 8,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 98,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 65,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6288905819909@s.whatsapp.net": {
+      "class": "archer",
+      "level": 2,
+      "exp": 65,
+      "expToNextLevel": 150,
+      "maxHp": 90,
+      "hp": 87,
+      "maxMp": 55,
+      "mp": 40,
+      "attack": 14,
+      "defense": 8,
+      "agility": 16,
+      "gold": 85,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 2,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": "pedang_besi",
+        "armor": "baju_kain"
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 11,
+      "lastBattle": 1759991909872,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "62881012533042@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 41,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 80,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 237,
+      "inventory": {
+        "potion": 3,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6287840426008@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 100,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285268752593@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 33,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 40,
+      "maxMp": 100,
+      "mp": 100,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 75,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": "kolektor_kulit",
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "62881024188917@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 100,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "62817326605@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 58,
+      "maxMp": 100,
+      "mp": 20,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 46,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1,
+        "taring_goblin": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 1761453044332,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6283898318616@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 100,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 2,
+      "pvpLosses": 0
+    },
+    "6282276460718@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 30,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 95,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 145,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0,
+      "fishing": {
+        "isFishing": true,
+        "lastCatch": 1764058705257
+      }
+    },
+    "6285702246764@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 2,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 95,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 55,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285717146970@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 50,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 69,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 150,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "628989228829@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 8,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 98,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 65,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6287856016955@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 100,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285971694560@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 95,
+      "maxMp": 30,
+      "mp": 15,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 1765601675076,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285814973690@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 30,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 85,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6281572368626@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 69,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 46,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 100,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    },
+    "6285664235146@s.whatsapp.net": {
+      "class": "mage",
+      "level": 1,
+      "exp": 0,
+      "expToNextLevel": 100,
+      "maxHp": 60,
+      "hp": 60,
+      "maxMp": 100,
+      "mp": 100,
+      "attack": 20,
+      "defense": 5,
+      "agility": 8,
+      "gold": 50,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 1766358843166,
+      "pvpWins": 0,
+      "pvpLosses": 1
+    },
+    "6283142110522@s.whatsapp.net": {
+      "class": "warrior",
+      "level": 1,
+      "exp": 25,
+      "expToNextLevel": 100,
+      "maxHp": 100,
+      "hp": 90,
+      "maxMp": 30,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "agility": 5,
+      "gold": 170,
+      "inventory": {
+        "potion": 3,
+        "pedang_kayu": 1,
+        "baju_kain": 1
+      },
+      "equipment": {
+        "weapon": null,
+        "armor": null
+      },
+      "location": "desa",
+      "battles": 0,
+      "monstersDefeated": 0,
+      "lastBattle": 0,
+      "activeQuest": null,
+      "questProgress": 0,
+      "lastDaily": 0,
+      "lastPvp": 0,
+      "pvpWins": 0,
+      "pvpLosses": 0
+    }
+  },
+  "monsters": {
+    "1": {
+      "name": "Goblin",
+      "hp": 30,
+      "attack": 5,
+      "defense": 2,
+      "exp": 15,
+      "gold": 10,
+      "level": 1,
+      "drops": {
+        "kulit_goblin": 0.7,
+        "taring_goblin": 0.3
+      }
+    },
+    "2": {
+      "name": "Orc",
+      "hp": 50,
+      "attack": 8,
+      "defense": 4,
+      "exp": 25,
+      "gold": 20,
+      "level": 3,
+      "drops": {
+        "kulit_orc": 0.6,
+        "batu_kekuatan": 0.1
+      }
+    },
+    "3": {
+      "name": "Naga",
+      "hp": 100,
+      "attack": 15,
+      "defense": 8,
+      "exp": 60,
+      "gold": 50,
+      "level": 10,
+      "drops": {
+        "sisik_naga": 0.5,
+        "batu_kekuatan": 0.3
+      }
+    },
+    "4": {
+      "name": "Goblin Jendral",
+      "hp": 80,
+      "attack": 12,
+      "defense": 6,
+      "exp": 70,
+      "gold": 60,
+      "level": 7,
+      "drops": {
+        "batu_kekuatan": 0.5
+      }
+    }
+  },
+  "locations": {
+    "desa": {
+      "name": "Desa Pemula",
+      "monsters": [
+        1
+      ],
+      "minLevel": 1,
+      "maxLevel": 5
+    },
+    "hutan": {
+      "name": "Hutan Gelap",
+      "monsters": [
+        1,
+        2
+      ],
+      "minLevel": 3,
+      "maxLevel": 8
+    },
+    "gua": {
+      "name": "Gua Naga",
+      "monsters": [
+        2,
+        3
+      ],
+      "minLevel": 8,
+      "maxLevel": 15
+    },
+    "tambang": {
+      "name": "Tambang Terbengkalai",
+      "monsters": [],
+      "minLevel": 5,
+      "maxLevel": 20,
+      "ores": {
+        "batu": 0.8,
+        "batu_bara": 0.5,
+        "bijih_besi": 0.2,
+        "permata": 0.05
+      }
+    },
+    "padang_rumput": {
+      "name": "Padang Rumput Liar",
+      "monsters": [],
+      "minLevel": 2,
+      "maxLevel": 20,
+      "herbs": {
+        "rumput_liar": 0.9,
+        "bunga_langka": 0.3,
+        "jamur_ajaib": 0.1
+      }
+    }
+  },
+  "items": {
+    "potion": {
+      "name": "Potion",
+      "type": "heal",
+      "value": 30,
+      "price": 10
+    },
+    "elixir": {
+      "name": "Elixir",
+      "type": "mana",
+      "value": 25,
+      "price": 15
+    },
+    "pedang_besi": {
+      "name": "Pedang Besi",
+      "type": "weapon",
+      "attack": 5,
+      "price": 50
+    },
+    "zirah_kulit": {
+      "name": "Zirah Kulit",
+      "type": "armor",
+      "defense": 3,
+      "price": 40
+    },
+    "pedang_kayu": {
+      "name": "Pedang Kayu",
+      "type": "weapon",
+      "attack": 2,
+      "price": 15
+    },
+    "baju_kain": {
+      "name": "Baju Kain",
+      "type": "armor",
+      "defense": 1,
+      "price": 10
+    },
+    "kulit_goblin": {
+      "name": "Kulit Goblin",
+      "type": "material",
+      "price": 2
+    },
+    "taring_goblin": {
+      "name": "Taring Goblin",
+      "type": "material",
+      "price": 4
+    },
+    "kulit_orc": {
+      "name": "Kulit Orc",
+      "type": "material",
+      "price": 5
+    },
+    "batu_kekuatan": {
+      "name": "Batu Kekuatan",
+      "type": "material",
+      "price": 20
+    },
+    "sisik_naga": {
+      "name": "Sisik Naga",
+      "type": "material",
+      "price": 30
+    },
+    "batu": {
+      "name": "Batu",
+      "type": "material",
+      "price": 1
+    },
+    "batu_bara": {
+      "name": "Batu Bara",
+      "type": "material",
+      "price": 8
+    },
+    "bijih_besi": {
+      "name": "Bijih Besi",
+      "type": "material",
+      "price": 15
+    },
+    "permata": {
+      "name": "Permata",
+      "type": "material",
+      "price": 100
+    },
+    "rumput_liar": {
+      "name": "Rumput Liar",
+      "type": "material",
+      "price": 1
+    },
+    "bunga_langka": {
+      "name": "Bunga Langka",
+      "type": "material",
+      "price": 25
+    },
+    "jamur_ajaib": {
+      "name": "Jamur Ajaib",
+      "type": "material",
+      "price": 40
+    },
+    "limit_bot_10": {
+      "name": "10 Limit Bot",
+      "type": "bot_feature",
+      "value": 10,
+      "price": 1000
+    }
+  },
+  "craftingRecipes": {
+    "potion_kuat": {
+      "name": "Potion Kuat",
+      "result": "potion",
+      "amount": 3,
+      "materials": {
+        "bunga_langka": 2,
+        "jamur_ajaib": 1
+      }
+    },
+    "zirah_kulit_kuat": {
+      "name": "Zirah Kulit Kuat",
+      "result": "zirah_kulit",
+      "amount": 1,
+      "materials": {
+        "kulit_orc": 5,
+        "kulit_goblin": 10
+      }
+    },
+    "pedang_besi_tempa": {
+      "name": "Pedang Besi Tempa",
+      "result": "pedang_besi",
+      "amount": 1,
+      "materials": {
+        "bijih_besi": 10,
+        "batu_bara": 5
+      }
+    }
+  },
+  "quests": {
+    "pemburu_goblin": {
+      "title": "Pemburu Goblin",
+      "description": "Kalahkan 5 Goblin di Desa Pemula.",
+      "type": "kill",
+      "target": "Goblin",
+      "count": 5,
+      "reward": {
+        "exp": 100,
+        "gold": 50,
+        "item": {
+          "id": "potion",
+          "amount": 3
+        }
+      }
+    },
+    "kolektor_kulit": {
+      "title": "Kolektor Kulit",
+      "description": "Kumpulkan 10 Kulit Goblin.",
+      "type": "collect",
+      "target": "kulit_goblin",
+      "count": 10,
+      "reward": {
+        "exp": 80,
+        "gold": 70
+      }
+    }
+  },
+  "dungeons": {
+    "goblin_outpost": {
+      "name": "Markas Goblin",
+      "minLevel": 5,
+      "stages": [
+        {
+          "monsterId": "1",
+          "count": 2
+        },
+        {
+          "monsterId": "1",
+          "count": 3
+        }
+      ],
+      "boss": "4",
+      "reward": {
+        "exp": 250,
+        "gold": 200,
+        "item": {
+          "id": "batu_kekuatan",
+          "amount": 2
+        }
+      }
+    }
+  },
+  "petData": {
+    "serigala": {
+      "name": "Serigala",
+      "attack": 5,
+      "cost": 300,
+      "description": "Serigala setia yang menambah kekuatan seranganmu."
+    },
+    "kura_kura": {
+      "name": "Kura-kura",
+      "defense": 3,
+      "cost": 250,
+      "description": "Kura-kura dengan tempurung keras yang menambah pertahananmu."
+    }
+  }
+}

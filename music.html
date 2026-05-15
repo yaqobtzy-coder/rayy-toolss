@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Bizzy Music Player - Streaming Lagu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-header">
+            <button class="back-btn" onclick="goBackToTools()"><i class="fas fa-arrow-left"></i> Kembali</button>
+            <h1><i class="fas fa-music"></i> Bizzy Music</h1>
+            <button class="clear-history-btn" id="clearHistoryBtn" style="display: none;">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <!-- Now Playing Card -->
+        <div class="music-card" id="nowPlayingCard" style="display: none;">
+            <div class="now-playing-header">
+                <img id="nowPlayingThumb" class="now-playing-img" src="https://via.placeholder.com/70x70?text=🎵" alt="Cover">
+                <div class="now-playing-info">
+                    <div class="now-playing-title" id="nowPlayingTitle">Tidak ada lagu</div>
+                    <div class="now-playing-artist" id="nowPlayingArtist">-</div>
+                </div>
+                <button class="control-btn" id="stopMusicBtn" style="width: 40px; height: 40px; font-size: 1rem;">
+                    <i class="fas fa-stop"></i>
+                </button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-filled" id="progressFilled"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="durationTime">0:00</span>
+                </div>
+            </div>
+            <div class="controls-row">
+                <button class="control-btn" id="playPauseBtnMain"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="volume-controls">
+                <button class="volume-btn" id="volumeDownBtn"><i class="fas fa-volume-down"></i></button>
+                <div class="volume-slider">
+                    <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                </div>
+                <button class="volume-btn" id="volumeUpBtn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari lagu... Contoh: Tak Ingin Usai, Runtuh, Komang" autocomplete="off">
+                <button id="searchBtn"><i class="fas fa-search"></i> Cari</button>
+            </div>
+            <div class="results-title">
+                <i class="fas fa-headphones"></i> HASIL PENCARIAN
+            </div>
+            <div class="results-list" id="resultsList">
+                <div class="empty-message">
+                    <i class="fas fa-search"></i> Cari lagu favoritmu
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="history-section" id="historySection" style="display: none;">
+            <div class="history-title">
+                <i class="fas fa-history"></i> RIWAYAT PUTAR
+            </div>
+            <div class="history-list" id="historyList"></div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Bizzy Impact | Music Player | Streaming from YouTube</p>
+        </div>
+    </div>
+
+    <audio id="backgroundAudio" preload="auto"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="global-music.js"></script>
+    <script src="music.js"></script>
+</body>
+</html>

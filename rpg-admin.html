@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>RPG Admin Panel - Manajemen Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="rpg-admin.css">
+</head>
+<body>
+    <!-- Login Admin Screen -->
+    <div id="adminLoginScreen" class="login-screen">
+        <div class="login-card">
+            <div class="login-logo">
+                <i class="fas fa-crown"></i>
+                <h2>RPG Admin Panel</h2>
+                <p>Masukkan kode akses admin</p>
+            </div>
+            <div class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="adminPassword" placeholder="Kode Admin" autocomplete="off">
+                </div>
+                <button id="adminLoginBtn" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Masuk ke Admin
+                </button>
+                <div class="login-info">
+                    <i class="fas fa-info-circle"></i> Kode admin: <strong>admin123</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Admin Panel -->
+    <div id="adminPanel" style="display: none;">
+        <button class="back-btn" onclick="goBackToTools()"><i class="fas fa-arrow-left"></i></button>
+        <button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+        <button class="logout-admin-btn" onclick="logoutAdmin()"><i class="fas fa-sign-out-alt"></i></button>
+
+        <div class="container">
+            <div class="header">
+                <h1><i class="fas fa-dragon"></i> RPG Admin Panel</h1>
+                <p>Kelola player, item, monster, dan data game RPG realtime Firebase</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="players">👥 Players</button>
+                <button class="tab-btn" data-tab="items">📦 Items</button>
+                <button class="tab-btn" data-tab="monsters">👾 Monsters</button>
+                <button class="tab-btn" data-tab="locations">🗺️ Locations</button>
+                <button class="tab-btn" data-tab="stats">📊 Stats</button>
+            </div>
+
+            <!-- Players Tab -->
+            <div id="playersTab" class="tab-content active">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchPlayer" placeholder="Cari player..." onkeyup="filterPlayers()">
+                    <button class="btn-primary" onclick="showAddPlayerModal()"><i class="fas fa-plus"></i> Tambah Player</button>
+                    <button class="btn-secondary" onclick="syncToFirebase()"><i class="fas fa-sync"></i> Sync ke Firebase</button>
+                </div>
+                <div class="stats-summary" id="statsSummary"></div>
+                <div class="loading-spinner" id="playersLoading" style="display: none; text-align: center; padding: 40px;">
+                    <i class="fas fa-spinner fa-pulse fa-2x"></i> Memuat data...
+                </div>
+                <div class="players-grid" id="playersGrid"></div>
+            </div>
+
+            <!-- Items Tab -->
+            <div id="itemsTab" class="tab-content">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchItem" placeholder="Cari item..." onkeyup="filterItems()">
+                    <button class="btn-primary" onclick="showAddItemModal()"><i class="fas fa-plus"></i> Tambah Item</button>
+                    <button class="btn-secondary" onclick="syncItemsToFirebase()"><i class="fas fa-sync"></i> Sync Items</button>
+                </div>
+                <div class="items-grid" id="itemsGrid"></div>
+            </div>
+
+            <!-- Monsters Tab -->
+            <div id="monstersTab" class="tab-content">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchMonster" placeholder="Cari monster..." onkeyup="filterMonsters()">
+                    <button class="btn-primary" onclick="showAddMonsterModal()"><i class="fas fa-plus"></i> Tambah Monster</button>
+                    <button class="btn-secondary" onclick="syncMonstersToFirebase()"><i class="fas fa-sync"></i> Sync Monsters</button>
+                </div>
+                <div class="monsters-grid" id="monstersGrid"></div>
+            </div>
+
+            <!-- Locations Tab -->
+            <div id="locationsTab" class="tab-content">
+                <div class="locations-grid" id="locationsGrid"></div>
+                <button class="btn-secondary" style="margin-top: 20px;" onclick="syncLocationsToFirebase()"><i class="fas fa-sync"></i> Sync Locations</button>
+            </div>
+
+            <!-- Stats Tab -->
+            <div id="statsTab" class="tab-content">
+                <div class="settings-card">
+                    <h3><i class="fas fa-chart-line"></i> Statistik Global Firebase</h3>
+                    <div id="globalStats"></div>
+                </div>
+                <div class="settings-card">
+                    <h3><i class="fas fa-database"></i> Manajemen Database</h3>
+                    <div class="settings-row">
+                        <button class="btn-primary" onclick="exportAllData()"><i class="fas fa-download"></i> Export Semua Data</button>
+                        <button class="btn-secondary" onclick="importFromFile()"><i class="fas fa-upload"></i> Import Data</button>
+                        <button class="btn-danger" onclick="resetAllData()"><i class="fas fa-trash"></i> Reset Semua Data</button>
+                    </div>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                </div>
+                <div class="settings-card">
+                    <h3><i class="fas fa-fire"></i> Reset Data Game</h3>
+                    <div class="settings-row">
+                        <button class="btn-danger" onclick="resetPlayersOnly()"><i class="fas fa-users"></i> Reset Semua Player</button>
+                        <button class="btn-danger" onclick="resetAllGameData()"><i class="fas fa-dragon"></i> Reset Game Data (Monster, Item, Location)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast" style="display: none;"></div>
+
+    <!-- Edit Player Modal -->
+    <div id="editPlayerModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-edit"></i> Edit Player</h3>
+                <button class="modal-close" onclick="closeEditPlayerModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="editPlayerId">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="editPlayerUsername" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Gold</label>
+                    <input type="number" id="editPlayerGold" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Level</label>
+                    <input type="number" id="editPlayerLevel" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>EXP</label>
+                    <input type="number" id="editPlayerExp" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>HP / Max HP</label>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="number" id="editPlayerHp" class="form-input" placeholder="HP">
+                        <input type="number" id="editPlayerMaxHp" class="form-input" placeholder="Max HP">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>MP / Max MP</label>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="number" id="editPlayerMp" class="form-input" placeholder="MP">
+                        <input type="number" id="editPlayerMaxMp" class="form-input" placeholder="Max MP">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Attack / Defense / Agility</label>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="number" id="editPlayerAttack" class="form-input" placeholder="Attack">
+                        <input type="number" id="editPlayerDefense" class="form-input" placeholder="Defense">
+                        <input type="number" id="editPlayerAgility" class="form-input" placeholder="Agility">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Class</label>
+                    <select id="editPlayerClass" class="form-input">
+                        <option value="warrior">Warrior</option>
+                        <option value="mage">Mage</option>
+                        <option value="archer">Archer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <select id="editPlayerLocation" class="form-input">
+                        <option value="desa">Desa Pemula</option>
+                        <option value="hutan">Hutan Gelap</option>
+                        <option value="gua">Gua Naga</option>
+                        <option value="tambang">Tambang Terbengkalai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeEditPlayerModal()">Batal</button>
+                <button class="btn-primary" onclick="savePlayerToFirebase()">Simpan ke Firebase</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Player Modal -->
+    <div id="addPlayerModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-plus"></i> Tambah Player Baru</h3>
+                <button class="modal-close" onclick="closeAddPlayerModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>User ID (contoh: user_123 atau nomor WA)</label>
+                    <input type="text" id="newPlayerId" class="form-input" placeholder="user_123456">
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="newPlayerUsername" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Class</label>
+                    <select id="newPlayerClass" class="form-input">
+                        <option value="warrior">Warrior</option>
+                        <option value="mage">Mage</option>
+                        <option value="archer">Archer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Gold Awal</label>
+                    <input type="number" id="newPlayerGold" class="form-input" value="50">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeAddPlayerModal()">Batal</button>
+                <button class="btn-primary" onclick="addPlayerToFirebase()">Tambah Player</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Item Modal -->
+    <div id="addItemModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-box-open"></i> Tambah Item Baru</h3>
+                <button class="modal-close" onclick="closeAddItemModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>ID Item</label>
+                    <input type="text" id="newItemId" class="form-input" placeholder="potion_kuat">
+                </div>
+                <div class="form-group">
+                    <label>Nama Item</label>
+                    <input type="text" id="newItemName" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Tipe</label>
+                    <select id="newItemType" class="form-input">
+                        <option value="heal">Heal</option>
+                        <option value="mana">Mana</option>
+                        <option value="weapon">Weapon</option>
+                        <option value="armor">Armor</option>
+                        <option value="material">Material</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Value / Attack / Defense</label>
+                    <input type="number" id="newItemValue" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Harga</label>
+                    <input type="number" id="newItemPrice" class="form-input">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeAddItemModal()">Batal</button>
+                <button class="btn-primary" onclick="addItemToFirebase()">Tambah Item</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Monster Modal -->
+    <div id="addMonsterModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-dragon"></i> Tambah Monster Baru</h3>
+                <button class="modal-close" onclick="closeAddMonsterModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>ID Monster</label>
+                    <input type="number" id="newMonsterId" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Nama Monster</label>
+                    <input type="text" id="newMonsterName" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>HP</label>
+                    <input type="number" id="newMonsterHp" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Attack</label>
+                    <input type="number" id="newMonsterAttack" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Defense</label>
+                    <input type="number" id="newMonsterDefense" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>EXP Reward</label>
+                    <input type="number" id="newMonsterExp" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Gold Reward</label>
+                    <input type="number" id="newMonsterGold" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Level</label>
+                    <input type="number" id="newMonsterLevel" class="form-input">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeAddMonsterModal()">Batal</button>
+                <button class="btn-primary" onclick="addMonsterToFirebase()">Tambah Monster</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="global-music.js"></script>
+    <script src="rpg-admin.js"></script>
+</body>
+</html>
